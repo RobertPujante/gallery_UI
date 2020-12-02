@@ -1,2 +1,2 @@
-# gallery_UI
-This is a videos and images user interface design
+# gallery UI
+This is a image cards user interface design
