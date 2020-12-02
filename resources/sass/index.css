@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1a2327;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+body .container .card-image {
+  overflow: hidden;
+  background-color: #263238;
+  -webkit-box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px;
+  position: relative;
+}
+
+body .container .card-image img {
+  width: 300px;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body .container .card-image:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+body .container .card-image:hover .social-icons {
+  -webkit-clip-path: circle(100% at 50% 50%);
+          clip-path: circle(100% at 50% 50%);
+}
+
+body .container .card-image .social-icons {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  -webkit-clip-path: circle(0% at 0% 0%);
+          clip-path: circle(0% at 0% 0%);
+}
+
+body .container .card-image .social-icons .facebook {
+  background-color: #1877f2;
+}
+
+body .container .card-image .social-icons .facebook:hover {
+  -webkit-box-shadow: 0px 0px 20px #1877f2;
+          box-shadow: 0px 0px 20px #1877f2;
+}
+
+body .container .card-image .social-icons .twitter {
+  background-color: #1da1f2;
+}
+
+body .container .card-image .social-icons .twitter:hover {
+  -webkit-box-shadow: 0px 0px 20px #1da1f2;
+          box-shadow: 0px 0px 20px #1da1f2;
+}
+
+body .container .card-image .social-icons .youtube {
+  background-color: #ff4545;
+}
+
+body .container .card-image .social-icons .youtube:hover {
+  -webkit-box-shadow: 0px 0px 20px #ff4545;
+          box-shadow: 0px 0px 20px #ff4545;
+}
+
+body .container .card-image .social-icons .github {
+  background-color: #333;
+}
+
+body .container .card-image .social-icons .github:hover {
+  -webkit-box-shadow: 0px 0px 20px #aaa;
+          box-shadow: 0px 0px 20px #aaa;
+}
+
+body .container .card-image .social-icons .linkedin {
+  background-color: #2977c9;
+}
+
+body .container .card-image .social-icons .linkedin:hover {
+  -webkit-box-shadow: 0px 0px 20px #2977c9;
+          box-shadow: 0px 0px 20px #2977c9;
+}
+
+body .container .card-image .social-icons .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-box-shadow .4s ease;
+  transition: -webkit-box-shadow .4s ease;
+  transition: box-shadow .4s ease;
+  transition: box-shadow .4s ease, -webkit-box-shadow .4s ease;
+}
+
+body .container .card-image .social-icons .icon .feather {
+  width: 18px;
+  height: 18px;
+}
+/*# sourceMappingURL=index.css.map */
