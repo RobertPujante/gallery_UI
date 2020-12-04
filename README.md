@@ -1,2 +1,2 @@
-# gallery UI
-This is a image cards user interface design
+# Profile Cards
+- This is a UI design for user profile in card format
