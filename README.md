@@ -10,4 +10,4 @@
 - HTML
 - CSS (Sass)
 
-* That's all my friends, you can always make it more amazing base on your preference. Let's keep learning and coding!
+### That's all my friends, you can always make it more amazing base on your preference. Let's keep learning and coding!
