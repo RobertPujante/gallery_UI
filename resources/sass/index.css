@@ -33,7 +33,7 @@ body .container .header {
           animation-duration: 1.8s;
 }
 
-body .container .header h1 {
+body .container .header h3 {
   color: #fff;
   font-weight: 600;
 }
