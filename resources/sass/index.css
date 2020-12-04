@@ -7,10 +7,10 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #1a2327;
 }
 
 body .container {
-  background-color: #1a2327;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,30 +20,50 @@ body .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
   width: 100%;
 }
 
 body .container .header {
-  position: absolute;
-  top: 30px;
-  -webkit-animation-name: slideTop;
-          animation-name: slideTop;
-  -webkit-animation-duration: 1.8s;
-          animation-duration: 1.8s;
+  text-align: center;
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 3s;
+          animation-iteration-count: 3s;
 }
 
-body .container .header h3 {
+body .container .header h2 {
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-body .container .card-image {
+body .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .cards .card-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   overflow: hidden;
   background-color: #263238;
   -webkit-box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,13 +77,13 @@ body .container .card-image {
   position: relative;
 }
 
-body .container .card-image img {
+body .container .cards .card-image img {
   width: 300px;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 
-body .container .card-image .card-inner {
+body .container .cards .card-image .card-inner {
   background-color: rgba(38, 50, 56, 0.6);
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -88,21 +108,21 @@ body .container .card-image .card-inner {
           clip-path: circle(0% at 50% 50%);
 }
 
-body .container .card-image .card-inner .card-title {
+body .container .cards .card-image .card-inner .card-title {
   margin-bottom: 20px;
   text-align: center;
 }
 
-body .container .card-image .card-inner .card-title h2 {
+body .container .cards .card-image .card-inner .card-title h2 {
   font-weight: 500;
   color: #fff;
 }
 
-body .container .card-image .card-inner .card-title p {
+body .container .cards .card-image .card-inner .card-title p {
   color: #fff;
 }
 
-body .container .card-image .card-inner .social-icons {
+body .container .cards .card-image .card-inner .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,52 +134,52 @@ body .container .card-image .card-inner .social-icons {
           align-items: center;
 }
 
-body .container .card-image .card-inner .social-icons .facebook {
+body .container .cards .card-image .card-inner .social-icons .facebook {
   background-color: #1877f2;
 }
 
-body .container .card-image .card-inner .social-icons .facebook:hover {
+body .container .cards .card-image .card-inner .social-icons .facebook:hover {
   -webkit-box-shadow: 0px 0px 20px #1877f2;
           box-shadow: 0px 0px 20px #1877f2;
 }
 
-body .container .card-image .card-inner .social-icons .twitter {
+body .container .cards .card-image .card-inner .social-icons .twitter {
   background-color: #1da1f2;
 }
 
-body .container .card-image .card-inner .social-icons .twitter:hover {
+body .container .cards .card-image .card-inner .social-icons .twitter:hover {
   -webkit-box-shadow: 0px 0px 20px #1da1f2;
           box-shadow: 0px 0px 20px #1da1f2;
 }
 
-body .container .card-image .card-inner .social-icons .youtube {
+body .container .cards .card-image .card-inner .social-icons .youtube {
   background-color: #ff4545;
 }
 
-body .container .card-image .card-inner .social-icons .youtube:hover {
+body .container .cards .card-image .card-inner .social-icons .youtube:hover {
   -webkit-box-shadow: 0px 0px 20px #ff4545;
           box-shadow: 0px 0px 20px #ff4545;
 }
 
-body .container .card-image .card-inner .social-icons .github {
+body .container .cards .card-image .card-inner .social-icons .github {
   background-color: #333;
 }
 
-body .container .card-image .card-inner .social-icons .github:hover {
+body .container .cards .card-image .card-inner .social-icons .github:hover {
   -webkit-box-shadow: 0px 0px 20px #aaa;
           box-shadow: 0px 0px 20px #aaa;
 }
 
-body .container .card-image .card-inner .social-icons .linkedin {
+body .container .cards .card-image .card-inner .social-icons .linkedin {
   background-color: #2977c9;
 }
 
-body .container .card-image .card-inner .social-icons .linkedin:hover {
+body .container .cards .card-image .card-inner .social-icons .linkedin:hover {
   -webkit-box-shadow: 0px 0px 20px #2977c9;
           box-shadow: 0px 0px 20px #2977c9;
 }
 
-body .container .card-image .card-inner .social-icons .icon {
+body .container .cards .card-image .card-inner .social-icons .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,57 +199,88 @@ body .container .card-image .card-inner .social-icons .icon {
   transition: all .4s ease;
 }
 
-body .container .card-image .card-inner .social-icons .icon:active {
+body .container .cards .card-image .card-inner .social-icons .icon:active {
   -webkit-clip-path: circle(100% at 50% 50%);
           clip-path: circle(100% at 50% 50%);
   -webkit-transition: all 4s ease;
   transition: all 4s ease;
 }
 
-body .container .card-image .card-inner .social-icons .icon .feather {
+body .container .cards .card-image .card-inner .social-icons .icon .feather {
   width: 18px;
   height: 18px;
 }
 
-body .container .card-image:hover img {
+body .container .cards .card-image:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
 }
 
-body .container .card-image:hover .card-inner {
+body .container .cards .card-image:hover .card-inner {
   -webkit-clip-path: circle(100% at 50% 50%);
           clip-path: circle(100% at 50% 50%);
   opacity: 1;
 }
 
-body .container #firstCard {
+body .container .cards #firstCard {
   -webkit-animation-name: slideTop;
           animation-name: slideTop;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
 
-body .container #secondCard {
+body .container .cards #secondCard {
   -webkit-animation-name: slideTop;
           animation-name: slideTop;
   -webkit-animation-duration: 2.4s;
           animation-duration: 2.4s;
 }
 
-body .container #thirdCard {
+body .container .cards #thirdCard {
   -webkit-animation-name: slideTop;
           animation-name: slideTop;
   -webkit-animation-duration: 2.8s;
           animation-duration: 2.8s;
 }
 
-@-webkit-keyframes slideTop {
+@-webkit-keyframes fadeOut {
   from {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: .3;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: .3;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideTop {
+  0% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-    opacity: .3;
+    opacity: .2;
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+    opacity: .7;
   }
   to {
     -webkit-transform: translateY(0%);
@@ -239,10 +290,15 @@ body .container #thirdCard {
 }
 
 @keyframes slideTop {
-  from {
+  0% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-    opacity: .3;
+    opacity: .2;
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+    opacity: .7;
   }
   to {
     -webkit-transform: translateY(0%);
