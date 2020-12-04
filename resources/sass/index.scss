@@ -15,6 +15,7 @@ body{
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        overflow: hidden;
         height: 100vh;
         width: 100%;
 
@@ -22,7 +23,6 @@ body{
             text-align: center;
             animation-name: fadeOut;
             animation-duration: 3s;
-            animation-iteration-count: 3s;
     
             h2{
                 color: #fff;
@@ -44,12 +44,13 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin: 15px;
+                margin: 20px;
                 position: relative;
     
                 img{
                     width: 300px;
                     transition: all .4s ease-in-out;
+                    filter: grayscale(20%);
                 }
     
                 .card-inner{                
@@ -64,6 +65,7 @@ body{
                     flex-direction: column;
                     opacity: 0;
                     clip-path: circle(0% at 50% 50%);
+
     
                     .card-title{
                         margin-bottom: 20px;
@@ -195,7 +197,7 @@ body{
     }
 
     50%{
-        transform: translateY(20%);
+        transform: translateY(10%);
         opacity: .7;
     }
 
