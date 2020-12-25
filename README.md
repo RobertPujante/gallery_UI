@@ -6,7 +6,7 @@
 ## What to do / install
 - npm install
 
-## Language Used
+## Built With
 - HTML
 - CSS (Sass)
 
