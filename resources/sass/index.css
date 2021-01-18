@@ -39,7 +39,7 @@ body .container .header {
 
 body .container .header h2 {
   color: #fff;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 body .container .cards {
@@ -62,7 +62,7 @@ body .container .cards .card-image {
   background-color: #263238;
   -webkit-box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
+  border-radius: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
