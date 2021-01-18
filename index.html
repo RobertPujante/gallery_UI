@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a professional profile card with hover animations.">
+    <meta http-equiv="Content-Security-Policy: script-src 'self' https://fonts.gstatic.com">
+
     <title>Profile Cards</title>
 
-    <!-- plugins -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
+    <link rel="preload" href="resources/sass/index.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"  as="style">
+
+    <link rel="preload" href="plugins/feather-icons/dist/feather.min.js" as="script">
+    <link rel="preload" href="resources/js/script.js" as="script">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- ends here -->
-
     <link rel="stylesheet" href="resources/sass/index.css">
 </head>
 <body>
@@ -23,7 +26,8 @@
 
         <div class="cards">
             <div class="card-image" id="firstCard">                
-                <img src="resources/images/background/ayo-ogunseinde-1L5QpkSs5IU-unsplash.jpg">
+                <img src="resources/images/background/ayo-ogunseinde-1L5QpkSs5IU-unsplash.jpg" alt="Jane Doe" width="300" height="450">
+
                 <div class="card-inner">
                     <div class="card-title">
                         <h2>Jane Doe</h2>
@@ -50,7 +54,7 @@
             </div>
     
             <div class="card-image" id="secondCard">
-                <img src="resources/images/background/cassandra-hamer-PwSRfJWqUqs-unsplash.jpg">
+                <img src="resources/images/background/cassandra-hamer-PwSRfJWqUqs-unsplash.jpg" alt="John Doe" width="300" height="450">
                 <div class="card-inner">
                     <div class="card-title">
                         <h2>John Doe</h2>
@@ -76,8 +80,8 @@
                 </div>
             </div> 
             
-            <div class="card-image" id="thirdCard">                
-                <img src="resources/images/background/radu-florin-OP8655xgBjo-unsplash.jpg">
+            <div class="card-image" id="thirdCard">
+                <img src="resources/images/background/radu-florin-OP8655xgBjo-unsplash.jpg" alt="Radu Florin" width="300" height="450">
                 <div class="card-inner">
                     <div class="card-title">
                         <h2>Radu Florin</h2>
@@ -106,9 +110,8 @@
     </div>
 
     <!-- feather replace -->
-    <script>
-        feather.replace();
-    </script>
+    <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
+    <script defer src="resources/js/script.js"></script>
     <!-- ends here -->
 
 </body>
