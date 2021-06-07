@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a professional profile card with hover animations.">
-    <meta http-equiv="Content-Security-Policy: script-src 'self' https://fonts.gstatic.com">
+    <meta name="description" content="This is a profile card with hover animations">
+    <!-- <meta http-equiv="Content-Security-Policy: script-src 'self' https://fonts.gstatic.com"> -->
 
     <title>Profile Cards</title>
 
@@ -14,9 +14,14 @@
     <link rel="preload" href="plugins/feather-icons/dist/feather.min.js" as="script">
     <link rel="preload" href="resources/js/script.js" as="script">
 
+    <link rel="preload" href="resources/images/background/ayo-ogunseinde-1L5QpkSs5IU-unsplash.jpg" as="image">
+    <link rel="preload" href="resources/images/background/cassandra-hamer-PwSRfJWqUqs-unsplash.jpg" as="image">
+    <link rel="preload" href="resources/images/background/radu-florin-OP8655xgBjo-unsplash.jpg" as="image">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/sass/index.css">
+
 </head>
 <body>
     <div class="container">
@@ -50,6 +55,9 @@
                             <i data-feather="github"></i>
                         </a>
                     </div>
+                    <div class="hire-me">
+                        <a href="#hire-me" class="btn-hire-me">Hire Me</a>
+                    </div>
                 </div>
             </div>
     
@@ -76,6 +84,10 @@
                         <a href="#github" class="icon github">
                             <i data-feather="github"></i>
                         </a>
+                    </div>
+
+                    <div class="hire-me">
+                        <a href="#hire-me" class="btn-hire-me">Hire Me</a>
                     </div>
                 </div>
             </div> 
@@ -104,14 +116,21 @@
                             <i data-feather="github"></i>
                         </a>
                     </div>
+                    <div class="hire-me">
+                        <a href="#hire-me" class="btn-hire-me">Hire Me</a>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="footer">
+            <p>© <span id="year"></span> | Robertson Morales</p>
         </div>
     </div>
 
     <!-- feather replace -->
-    <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
-    <script defer src="resources/js/script.js"></script>
+    <script src="plugins/feather-icons/dist/feather.min.js"></script>
+    <script src="resources/js/script.js"></script>
     <!-- ends here -->
 
 </body>
