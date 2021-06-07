@@ -38,8 +38,8 @@ body .container .header {
 }
 
 body .container .header h2 {
-  color: #fff;
-  font-weight: 800;
+  color: #ddd;
+  font-weight: 600;
 }
 
 body .container .cards {
@@ -62,7 +62,7 @@ body .container .cards .card-image {
   background-color: #263238;
   -webkit-box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,11 +212,31 @@ body .container .cards .card-image .card-inner .social-icons .icon .feather {
   height: 18px;
 }
 
+body .container .cards .card-image .card-inner .hire-me {
+  margin-top: 50px;
+}
+
+body .container .cards .card-image .card-inner .hire-me .btn-hire-me {
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 30px;
+  background-color: #ddd;
+  color: #263238;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+body .container .cards .card-image .card-inner .hire-me .btn-hire-me:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 20px #fff;
+          box-shadow: 0px 0px 20px #fff;
+}
+
 body .container .cards .card-image:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 body .container .cards .card-image:hover .card-inner {
@@ -244,6 +264,11 @@ body .container .cards #thirdCard {
           animation-name: slideTop;
   -webkit-animation-duration: 2.8s;
           animation-duration: 2.8s;
+}
+
+body .container .footer {
+  position: absolute;
+  bottom: 0;
 }
 
 @-webkit-keyframes fadeOut {
