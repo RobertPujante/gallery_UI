@@ -29,19 +29,6 @@ body .container {
   width: 100%;
 }
 
-body .container .header {
-  text-align: center;
-  -webkit-animation-name: fadeOut;
-          animation-name: fadeOut;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
-body .container .header h2 {
-  color: #ddd;
-  font-weight: 600;
-}
-
 body .container .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +49,7 @@ body .container .cards .card-image {
   background-color: #263238;
   -webkit-box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 30px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
+  border-radius: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +107,7 @@ body .container .cards .card-image .card-inner .card-title h2 {
 }
 
 body .container .cards .card-image .card-inner .card-title p {
-  color: #fff;
+  color: #ddd;
 }
 
 body .container .cards .card-image .card-inner .social-icons {
@@ -212,21 +199,21 @@ body .container .cards .card-image .card-inner .social-icons .icon .feather {
   height: 18px;
 }
 
-body .container .cards .card-image .card-inner .hire-me {
+body .container .cards .card-image .card-inner .view-profile {
   margin-top: 50px;
 }
 
-body .container .cards .card-image .card-inner .hire-me .btn-hire-me {
+body .container .cards .card-image .card-inner .view-profile .btn-view-profile {
   text-decoration: none;
   padding: 8px 25px;
   border-radius: 30px;
-  background-color: #ddd;
+  background-color: #fff;
   color: #263238;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 
-body .container .cards .card-image .card-inner .hire-me .btn-hire-me:hover {
+body .container .cards .card-image .card-inner .view-profile .btn-view-profile:hover {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 20px #fff;
           box-shadow: 0px 0px 20px #fff;
@@ -264,11 +251,6 @@ body .container .cards #thirdCard {
           animation-name: slideTop;
   -webkit-animation-duration: 2.8s;
           animation-duration: 2.8s;
-}
-
-body .container .footer {
-  position: absolute;
-  bottom: 0;
 }
 
 @-webkit-keyframes fadeOut {
