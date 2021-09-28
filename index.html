@@ -24,14 +24,12 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h2>Profile Cards</h2>
-        </div>
-
+    <main class="container">
         <div class="cards">
             <div class="card-image" id="firstCard">                
-                <img src="resources/images/background/ayo-ogunseinde-1L5QpkSs5IU-unsplash.jpg" alt="Jane Doe" width="300" height="450">
+                <img src="resources/images/background/ayo-ogunseinde-1L5QpkSs5IU-unsplash.jpg"
+                    alt="Jane Doe"
+                    width="300" height="450">
 
                 <div class="card-inner">
                     <div class="card-title">
@@ -55,8 +53,8 @@
                             <i data-feather="github"></i>
                         </a>
                     </div>
-                    <div class="hire-me">
-                        <a href="#hire-me" class="btn-hire-me">Hire Me</a>
+                    <div class="view-profile">
+                        <a href="#view-profile" class="btn-view-profile">View Profile</a>
                     </div>
                 </div>
             </div>
@@ -86,8 +84,8 @@
                         </a>
                     </div>
 
-                    <div class="hire-me">
-                        <a href="#hire-me" class="btn-hire-me">Hire Me</a>
+                    <div class="view-profile">
+                        <a href="#view-profile" class="btn-view-profile">View Profile</a>
                     </div>
                 </div>
             </div> 
@@ -116,21 +114,17 @@
                             <i data-feather="github"></i>
                         </a>
                     </div>
-                    <div class="hire-me">
-                        <a href="#hire-me" class="btn-hire-me">Hire Me</a>
+                    <div class="view-profile">
+                        <a href="#view-profile" class="btn-view-profile">View Profile</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="footer">
-            <p>© <span id="year"></span> | Robertson Morales</p>
-        </div>
-    </div>
+    </main>
 
     <!-- feather replace -->
     <script src="plugins/feather-icons/dist/feather.min.js"></script>
-    <script src="resources/js/script.js"></script>
+    <script>feather.replace();</script>
     <!-- ends here -->
 
 </body>
